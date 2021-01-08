@@ -1,0 +1,32 @@
+{
+  "name": "ocproxy",
+  "version": "0.1.0",
+  "description": "Front end lambda that sorts out CORS responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.dxc.com/insurance/omnichannel-eu.git"
+  },
+  "author": "Martin Bartlett <martin.j.bartlett@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "content-type": "^1.0.2",
+    "escape-string-regexp": "^1.0.5",
+    "jsonpath-plus": "^3.0.0",
+    "promise-command-chain": "^1.0.1",
+    "useful-utils": "git+https://github.dxc.com/insurance/npm-useful-utils.git"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "jest-runner-eslint": "^0.8.0",
+    "aws-sdk": "^2.538.0",
+    "aws-sdk-mock": "^5.1.0",
+    "dotenv": "^8.2.0"
+  }
+}

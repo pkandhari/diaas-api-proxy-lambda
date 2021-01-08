@@ -1,0 +1,178 @@
+{
+    "resource": "/{resource-id+}",
+    "path": "/dms/permission_resources/libraries/permissions",
+    "httpMethod": "GET",
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9,ru;q=0.8",
+        "Authorization": "Bearer eyJraWQiOiI0SjJpUmJta1VTb1ZiUUNmblNkNkpvZCt6Q1M5ZjBIVlVkMHZ0QlUwa0dNPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoidTRiOGFlR1RVWHBlS1M5T2VKZXFjUSIsInN1YiI6ImYzMTE5ZGFkLTVjOWQtNGIzNS1hNjg1LWY2N2QwYTM0ZmFmNCIsImNvZ25pdG86Z3JvdXBzIjpbIkRNU19BZG1pbl9Hcm91cCJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfNmNGMkowN1lpIiwiY29nbml0bzp1c2VybmFtZSI6ImYzMTE5ZGFkLTVjOWQtNGIzNS1hNjg1LWY2N2QwYTM0ZmFmNCIsImdpdmVuX25hbWUiOiJUZXN0IiwibG9jYWxlIjoiRU4iLCJhdWQiOiI2NW12c2Y5dDVic2xiMDZlamoxcTZwMGUwaiIsImV2ZW50X2lkIjoiZjgyMGU1NDUtMGQ4My00ODI5LTgxMDktYjVmOWQyY2FkMzA0IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1OTk0NjQxNTksIm5hbWUiOiJUZXN0IEpSIiwiZXhwIjoxNjAwMzI3NTkwLCJpYXQiOjE2MDAzMjM5OTAsImZhbWlseV9uYW1lIjoiVGVzdEZhbWlseSIsImVtYWlsIjoidGVzdEBkeGMuY29tIn0.OH-_RY4_uM9ey7aouVjd1Kttdp3t6fzYCPGIDY_0U2KaDSjTRij3xgR3u9srKZljhxsDmaAOkvy8Lk860il3R0zuPSWx7ersLYvXjRIEYSx5xY7_OnCbFeC-x_Blg7YVyT7O9_oZpMZQyrIP7fUU_xhCm0seMZwtEqu3dP0C07se9FXMrMMiyF7iITNM7knzkNGs0If72gCwXGTCeUdMHfTP10u-6dtv2T0qwTk1fQCKHxEWq4pcDmP-c2zpbWpfECiSDFwFjkSAXETZPsokNTuNFxHGa4qFdo5I8Xnw_CMyzlaxT0SXLmM5AmYL-JlQy9J38qXqb6CSCfmvkwm69A",
+        "Cache-Control": "no-cache",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Viewer-Country": "RU",
+        "Content-Type": "application/json",
+        "Cookie": "SMSESSION=MZCcnLsDLYv9npTjzhYAi4t4Hok1bilkkvHnwkKXObsIT0RCkM+dtkH9b74IMJoBVAK1eckLlPI8gfv+wmnTHOc8lQMdRK2Ctjv3c9HG2EHQnDx1ibdbPpP9YyPgmzyVlp1UZF+vB1lvf+8VWLX3OhsQwYionILWEaXHbHR87miDOegibVbdcTQL5P0M1OM0luCGk5NfCzlTpimymY/jvC3afrwzgwhJIiJzkgBb5aRlNc96GqS6vO+SMNMyVULNpvu1FoTl5mdB9vh1rFZuW3tbpedWIJQQ6oWCid2r1V+T4xxXZrf1IIQvuCfJ9L8xxTXKlgmvmqCgouUvsWCMCqiECGeqCvL9Q5ka+V3kdZ/drWebAXJyqRQ4rGBCeE8geAt3300c6nJ5IrL3DoYyq6VWStaGUOnFN7R0xUZzd/o9zn8kA5431JJPPSV/MILK+P1k41TvBaPctwxAarPqTmqIDrZmFkkujyk1/PU8ex9B1xnWuVZIdHmKTApyD6so7YVx78MpI5L7sapxtFcWCYfIlO7QZzsd6DTUWTuCO5bDXshW0r21s8bAZZ/7UGUz2BtG+LoI4HYug66G72FYmATrTUG8OJxTxCGHIgPf8RMRIDpBsLtvuhq5kSmPj40Q3poowIOk5YllHRJ2zAVY8b5I5kfZgc6b6UmEVsM5UmsiqQzT2ViV7AwrCXIkBtKWoYuAICapaM/VrqinAXvg3m4nqYbZrDLkwBIbJj8GdezoXSIWrYK/2UtyjiXGma1SFgPhF6mZ5Nt5IWvONl159vc5cfQobYilWUlW1KH85p/k4UB4dp4m8H5cTAo5eT5XwX6DQpBbzSlgM6JToFAp6RP1YYNmY95QZotzm4cQMrJz920wEZp5mSTGqlSH5q3GYO96vNVu7cyg6wj2X53LILu0PKF4wN8ptm4+1OuXPJTKxni+9/zXlCjYxVpuCKOf453WlDANNI07wI3pyKqumOECcr4Rn2tPUeNDhOzvqqMSOuxQOL+Op6v6y8Mkx1ZcLGKeyMNLbiKEVTkpc8mEhHphefCqNvWXglc6SgerZcGjkxGzVTO3cwqLSfX2AAMWvCBqrb+Gp6ng7Qh9MUJBKK6nG+5/yRsSEhrmmc2qxIQootjR3bqXhC2AqpLy220Ao2fprquxexVGdmARQr3OsYUrf45VIIShAISno30/5facKyGdhV0aeecdo7aZbzSfm/DXIqoOPpwQlujwPs/cqn6OfywEY/aw; clientchoice=DesktopClient; sfbShellAppLaunched=yes",
+        "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+        "Host": "api.feature-150.hub-52.dev.assure.dxc.com",
+        "Pragma": "no-cache",
+        "Referer": "https://assure-document-management.feature-150.hub-52.dev.assure.dxc.com/groups/DMS_Admin_Group",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "User-Agent": "Amazon CloudFront",
+        "Via": "1.1 3d5e362b762559337c21948fd9e4c8f1.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "mvjbuqw3HBD50bqQlkTackdMoBEPZGsMJJmfXwPtpeM7Zn-ay7ro3A==",
+        "X-Amzn-Trace-Id": "Root=1-5f6302c9-32b442afb7247873206efc92",
+        "x-api-key": "7AcBrNl5El61Qd6rEaNrO67SP0drINVM7EN3heLF",
+        "X-DXC-Behaviour-Prefix": "/api",
+        "X-DXC-Original-Host": "assure-document-management.feature-150.hub-52.dev.assure.dxc.com",
+        "X-DXC-Original-URL": "https://assure-document-management.feature-150.hub-52.dev.assure.dxc.com/api/dms/permission_resources/libraries/permissions",
+        "X-Forwarded-For": "213.170.89.210, 64.252.86.207",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "application/json"
+        ],
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Accept-Language": [
+            "en-US,en;q=0.9,ru;q=0.8"
+        ],
+        "Authorization": [
+            "Bearer eyJraWQiOiI0SjJpUmJta1VTb1ZiUUNmblNkNkpvZCt6Q1M5ZjBIVlVkMHZ0QlUwa0dNPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoidTRiOGFlR1RVWHBlS1M5T2VKZXFjUSIsInN1YiI6ImYzMTE5ZGFkLTVjOWQtNGIzNS1hNjg1LWY2N2QwYTM0ZmFmNCIsImNvZ25pdG86Z3JvdXBzIjpbIkRNU19BZG1pbl9Hcm91cCJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfNmNGMkowN1lpIiwiY29nbml0bzp1c2VybmFtZSI6ImYzMTE5ZGFkLTVjOWQtNGIzNS1hNjg1LWY2N2QwYTM0ZmFmNCIsImdpdmVuX25hbWUiOiJUZXN0IiwibG9jYWxlIjoiRU4iLCJhdWQiOiI2NW12c2Y5dDVic2xiMDZlamoxcTZwMGUwaiIsImV2ZW50X2lkIjoiZjgyMGU1NDUtMGQ4My00ODI5LTgxMDktYjVmOWQyY2FkMzA0IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1OTk0NjQxNTksIm5hbWUiOiJUZXN0IEpSIiwiZXhwIjoxNjAwMzI3NTkwLCJpYXQiOjE2MDAzMjM5OTAsImZhbWlseV9uYW1lIjoiVGVzdEZhbWlseSIsImVtYWlsIjoidGVzdEBkeGMuY29tIn0.OH-_RY4_uM9ey7aouVjd1Kttdp3t6fzYCPGIDY_0U2KaDSjTRij3xgR3u9srKZljhxsDmaAOkvy8Lk860il3R0zuPSWx7ersLYvXjRIEYSx5xY7_OnCbFeC-x_Blg7YVyT7O9_oZpMZQyrIP7fUU_xhCm0seMZwtEqu3dP0C07se9FXMrMMiyF7iITNM7knzkNGs0If72gCwXGTCeUdMHfTP10u-6dtv2T0qwTk1fQCKHxEWq4pcDmP-c2zpbWpfECiSDFwFjkSAXETZPsokNTuNFxHGa4qFdo5I8Xnw_CMyzlaxT0SXLmM5AmYL-JlQy9J38qXqb6CSCfmvkwm69A"
+        ],
+        "Cache-Control": [
+            "no-cache"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Viewer-Country": [
+            "RU"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Cookie": [
+            "SMSESSION=MZCcnLsDLYv9npTjzhYAi4t4Hok1bilkkvHnwkKXObsIT0RCkM+dtkH9b74IMJoBVAK1eckLlPI8gfv+wmnTHOc8lQMdRK2Ctjv3c9HG2EHQnDx1ibdbPpP9YyPgmzyVlp1UZF+vB1lvf+8VWLX3OhsQwYionILWEaXHbHR87miDOegibVbdcTQL5P0M1OM0luCGk5NfCzlTpimymY/jvC3afrwzgwhJIiJzkgBb5aRlNc96GqS6vO+SMNMyVULNpvu1FoTl5mdB9vh1rFZuW3tbpedWIJQQ6oWCid2r1V+T4xxXZrf1IIQvuCfJ9L8xxTXKlgmvmqCgouUvsWCMCqiECGeqCvL9Q5ka+V3kdZ/drWebAXJyqRQ4rGBCeE8geAt3300c6nJ5IrL3DoYyq6VWStaGUOnFN7R0xUZzd/o9zn8kA5431JJPPSV/MILK+P1k41TvBaPctwxAarPqTmqIDrZmFkkujyk1/PU8ex9B1xnWuVZIdHmKTApyD6so7YVx78MpI5L7sapxtFcWCYfIlO7QZzsd6DTUWTuCO5bDXshW0r21s8bAZZ/7UGUz2BtG+LoI4HYug66G72FYmATrTUG8OJxTxCGHIgPf8RMRIDpBsLtvuhq5kSmPj40Q3poowIOk5YllHRJ2zAVY8b5I5kfZgc6b6UmEVsM5UmsiqQzT2ViV7AwrCXIkBtKWoYuAICapaM/VrqinAXvg3m4nqYbZrDLkwBIbJj8GdezoXSIWrYK/2UtyjiXGma1SFgPhF6mZ5Nt5IWvONl159vc5cfQobYilWUlW1KH85p/k4UB4dp4m8H5cTAo5eT5XwX6DQpBbzSlgM6JToFAp6RP1YYNmY95QZotzm4cQMrJz920wEZp5mSTGqlSH5q3GYO96vNVu7cyg6wj2X53LILu0PKF4wN8ptm4+1OuXPJTKxni+9/zXlCjYxVpuCKOf453WlDANNI07wI3pyKqumOECcr4Rn2tPUeNDhOzvqqMSOuxQOL+Op6v6y8Mkx1ZcLGKeyMNLbiKEVTkpc8mEhHphefCqNvWXglc6SgerZcGjkxGzVTO3cwqLSfX2AAMWvCBqrb+Gp6ng7Qh9MUJBKK6nG+5/yRsSEhrmmc2qxIQootjR3bqXhC2AqpLy220Ao2fprquxexVGdmARQr3OsYUrf45VIIShAISno30/5facKyGdhV0aeecdo7aZbzSfm/DXIqoOPpwQlujwPs/cqn6OfywEY/aw; clientchoice=DesktopClient; sfbShellAppLaunched=yes"
+        ],
+        "Expires": [
+            "Sat, 01 Jan 2000 00:00:00 GMT"
+        ],
+        "Host": [
+            "api.feature-150.hub-52.dev.assure.dxc.com"
+        ],
+        "Pragma": [
+            "no-cache"
+        ],
+        "Referer": [
+            "https://assure-document-management.feature-150.hub-52.dev.assure.dxc.com/groups/DMS_Admin_Group"
+        ],
+        "sec-fetch-dest": [
+            "empty"
+        ],
+        "sec-fetch-mode": [
+            "cors"
+        ],
+        "sec-fetch-site": [
+            "same-origin"
+        ],
+        "User-Agent": [
+            "Amazon CloudFront"
+        ],
+        "Via": [
+            "1.1 3d5e362b762559337c21948fd9e4c8f1.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "mvjbuqw3HBD50bqQlkTackdMoBEPZGsMJJmfXwPtpeM7Zn-ay7ro3A=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5f6302c9-32b442afb7247873206efc92"
+        ],
+        "x-api-key": [
+            "7AcBrNl5El61Qd6rEaNrO67SP0drINVM7EN3heLF"
+        ],
+        "X-DXC-Behaviour-Prefix": [
+            "/api"
+        ],
+        "X-DXC-Original-Host": [
+            "assure-document-management.feature-150.hub-52.dev.assure.dxc.com"
+        ],
+        "X-DXC-Original-URL": [
+            "https://assure-document-management.feature-150.hub-52.dev.assure.dxc.com/api/dms/permission_resources/libraries/permissions"
+        ],
+        "X-Forwarded-For": [
+            "213.170.89.210, 64.252.86.207"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": {
+        "resource-id": "permission_resources/libraries/permissions"
+    },
+    "stageVariables": {
+        "authorizerDefaultAllow": "true",
+        "rewriteAllBackendURLs": "false",
+        "authorizerTokenUse": "access,id",
+        "authorizerLambdaExecRole": "assure-feature-150-20200707133954960400000001",
+        "authorizerLambda": "feature-150-api-infra-api-auth",
+        "integrationLambdaExecRole": "assure-feature-150-20200707133954960500000002",
+        "integrationLambda": "feature-150-api-infra-api-proxy"
+    },
+    "requestContext": {
+        "resourceId": "9xif1q",
+        "authorizer": {
+            "email_verified": "true",
+            "cognito_groups": "DMS_Admin_Group",
+            "name": "Test JR",
+            "principalId": "f3119dad-5c9d-4b35-a685-f67d0a34faf4",
+            "integrationLatency": 244,
+            "given_name": "Test",
+            "locale": "EN",
+            "cognito_username": "f3119dad-5c9d-4b35-a685-f67d0a34faf4",
+            "family_name": "TestFamily",
+            "email": "test@dxc.com"
+        },
+        "resourcePath": "/{resource-id+}",
+        "httpMethod": "GET",
+        "extendedRequestId": "S_1feHXJvHcFuHA=",
+        "requestTime": "17/Sep/2020:06:31:37 +0000",
+        "path": "/dms/permission_resources/libraries/permissions",
+        "accountId": "822629893857",
+        "protocol": "HTTP/1.1",
+        "stage": "feature-150",
+        "domainPrefix": "api",
+        "requestTimeEpoch": 1600324297354,
+        "requestId": "3fd2b954-1a3f-4b79-a4c7-7541365b9613",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "cognitoIdentityId": null,
+            "apiKey": "7AcBrNl5El61Qd6rEaNrO67SP0drINVM7EN3heLF",
+            "principalOrgId": null,
+            "cognitoAuthenticationType": null,
+            "userArn": null,
+            "apiKeyId": "7v4cv8tel9",
+            "userAgent": "Amazon CloudFront",
+            "accountId": null,
+            "caller": null,
+            "sourceIp": "213.170.89.210",
+            "accessKey": null,
+            "cognitoAuthenticationProvider": null,
+            "user": null
+        },
+        "domainName": "api.feature-150.hub-52.dev.assure.dxc.com",
+        "apiId": "i7sfjnnq71"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}
+ 
